@@ -1,0 +1,1 @@
+ export let skillsArray = [`Html`,`css`,`js`,`ts`,`angular`]

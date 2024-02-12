@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { skillsArray } from './components/const/skills';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'InputOutputProject';
+  // skillsArray : Array<string> = [`Html`,`css`,`js`,`ts`,`angular`]
+  skillsArray: Array<string> = skillsArray
+  addTodo(ele:string){
+    if(ele){
+      this.skillsArray.push(ele)
+      console.log(ele)
+    }
+  }
 }
+
+
+
